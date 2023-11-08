@@ -1,0 +1,7 @@
+psutil==5.9.5
+sounddevice==0.4.6
+scipy==1.11.2
+tensorflow==2.13.0
+redis==5.0.0
+cherrypy==18.8.0
+paho-mqtt==1.6.1
