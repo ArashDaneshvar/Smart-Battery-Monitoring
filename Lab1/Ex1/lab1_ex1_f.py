@@ -1,0 +1,1 @@
+# Measure the output .wav size (in KB) with os.path.getsize method from the os package
