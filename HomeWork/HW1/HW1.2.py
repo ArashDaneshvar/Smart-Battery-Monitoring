@@ -5,10 +5,10 @@ import uuid
 from datetime import datetime
 
 
-REDIS_HOST = 'redis-18872.c9.us-east-1-4.ec2.cloud.redislabs.com'
-REDIS_PORT = 18872
-REDIS_USERNAME = 'default'
-REDIS_PASSWORD = 'aE86vDxKP6ovbBMdVxJzLQvwT1GbIoer'
+REDIS_HOST = 'Your Host'
+REDIS_PORT = "port"
+REDIS_USERNAME = 'username'
+REDIS_PASSWORD = 'password'
 redis_client = redis.Redis(host= REDIS_HOST, port= REDIS_PORT, username= REDIS_USERNAME, password= REDIS_PASSWORD)
 
 is_connected = redis_client.ping()
