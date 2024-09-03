@@ -1,0 +1,26 @@
+@host = http://localhost:8080
+# @host = https://bdbc19a1-4d38-4250-8aec-b2a48a575b76.deepnoteproject.com
+
+###
+GET {{host}}/online
+
+###
+GET {{host}}/devices
+
+###
+GET {{host}}/devices?blt=100&plugged=1
+
+##
+GET {{host}}/devices?blt=100&plugged=0
+
+###
+GET {{host}}/devices?blt=100
+
+###
+GET {{host}}/devices?plugged=1
+
+###
+GET {{host}}/device/0xf63a4e8bc97f?start_date=2023-12-21&end_date=2024-01-20
+
+###
+DELETE {{host}}/device/0x56a24219aeec
