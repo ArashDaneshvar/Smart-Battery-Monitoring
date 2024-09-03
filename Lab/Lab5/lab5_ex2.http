@@ -1,0 +1,16 @@
+@host = https://api.coinbase.com/v2
+
+###
+GET {{host}}/currencies
+
+###
+GET {{host}}/exchange-rates?currency=EUR
+
+###
+GET {{host}}/exchange-rates?currency=AAA
+
+###
+GET {{host}}/prices/BTC-EUR/buy
+
+###
+GET {{host}}/prices/BTC-EUR/sell

@@ -1,0 +1,38 @@
+@host = http://localhost:8080
+# @host = https://bdbc19a1-4d38-4250-8aec-b2a48a575b76.deepnoteproject.com
+
+###
+GET {{host}}/online
+
+###
+GET {{host}}/todos
+
+###
+GET {{host}}/todos?message=homework
+
+###
+GET {{host}}/todos?completed=true
+
+###
+GET {{host}}/todos?message=homework&completed=true
+
+###
+POST {{host}}/todos
+Content-Type: application/json
+
+{"message": "Buy Coffee"}
+
+###
+GET {{host}}/todo
+
+###
+GET {{host}}/todo/f0f4a9b7-bddc-4163-9df6-59272e56ac2c
+
+###
+PUT {{host}}/todo/455be775-aa4d-48f3-8908-cd9fb1ca4c7
+Content-Type: application/json
+
+{"message": "Buy Coffee", "completed": true}
+
+###
+DELETE {{host}}/todo/d3f36834-9c86-4761-9165-54dc2885be6a

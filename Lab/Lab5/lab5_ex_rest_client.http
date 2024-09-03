@@ -1,0 +1,4 @@
+@host = https://jsonplaceholder.typicode.com
+
+###
+GET {{host}}/users
